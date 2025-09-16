@@ -12,16 +12,14 @@ public class Main {
     private static final String RESET = "\033[0m";
 
     public static void main(String[] args) {
-        // Разобраться что такое Scanner и как он работает
         Scanner sc = new Scanner(System.in);
         String userInput;
 
         while (true) {
-            System.out.println(
+            System.out.print(
                     "Enter top limit int number (or 'q' to quit): ");
             userInput = sc.nextLine();
 
-            // Узнать чем является пустой topLimit
             long topLimit;
             try {
                 if (userInput.equalsIgnoreCase("q") || userInput.equalsIgnoreCase("quit") ) {
